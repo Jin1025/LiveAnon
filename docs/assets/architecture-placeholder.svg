@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 460" role="img" aria-labelledby="title desc">
-  <title id="title">LiveAnon architecture placeholder</title>
-  <desc id="desc">Placeholder to be replaced with the final architecture figure.</desc>
-  <rect width="1200" height="460" rx="24" fill="#fbf7f1"/>
-  <rect x="55" y="70" width="1090" height="320" rx="18" fill="#ffffff" stroke="#ddcfbf" stroke-width="2" stroke-dasharray="9 8"/>
-  <text x="600" y="205" text-anchor="middle" font-family="Georgia, serif" font-size="38" fill="#6f4b33">LiveAnon Main Architecture</text>
-  <text x="600" y="258" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#8b7c6e">Drop the final figure here as assets/architecture.png</text>
-  <text x="600" y="302" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#a19182">Training + inference · continuous ASR content · codec prompt continuation · capped RVQ delay</text>
-</svg>
