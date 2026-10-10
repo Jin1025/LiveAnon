@@ -6,9 +6,13 @@
 </p>
 
 <div align="center">
-  <b>Yejin Kim, Kyungsu Kim, Seungu Han, Kyogu Lee</b>
+  <b>Yejin Kim<sup>*</sup>, Kyungsu Kim<sup>*</sup>, Seungu Han<sup>*</sup>, Kyogu Lee<sup>*†‡</sup></b>
   <br>
-  <a href="https://www.snu.ac.kr/">Seoul National University</a>, Seoul, Korea
+  <sup>*</sup>Music and Audio Research Group (MARG)
+  <br>
+  <sup>†</sup>Department of Intelligence and Information, Seoul National University
+  <br>
+  <sup>‡</sup>Interdisciplinary Program in Artificial Intelligence, Seoul National University
 </div>
 
 ## Architecture
@@ -19,7 +23,7 @@ Linguistic content is extracted by a streaming Zipformer ASR encoder and conditi
 A capped delay pattern generates the RVQ codebooks partially in parallel, which shortens the streaming latency.
 
 <p align="center">
-  <img src="assets/architecture.png" alt="LiveAnon architecture" width="100%">
+  <img src="assets/architecture.jpg" alt="LiveAnon architecture" width="100%">
 </p>
 
 ## Installation
@@ -59,7 +63,7 @@ python inference.py \
     --output <path_to_output_audio>
 ```
 
-Simulated online inference
+Streaming inference
 ```bash
 python inference.py \
     --ckpt <path_to_checkpoint> \
@@ -67,10 +71,10 @@ python inference.py \
     --reference <path_to_reference_audio> \
     --output <path_to_output_audio> \
     --streaming \
-    --chunk_ms 20  # size of each incoming source block in ms
+    --chunk_ms 20  # chunk size in milliseconds
 ```
-This simulates chunk-by-chunk online inference: the source is fed to the model in `--chunk_ms` blocks, and anonymized audio is produced as soon as it is ready.
-`--source` has no length limit. `--reference` is trimmed of leading and trailing silence and cropped to a 3-second prompt (`--ref_sec`).
+In streaming mode, the source is processed chunk by chunk (`--chunk_ms`), and the anonymized audio is output progressively.
+The reference is trimmed of leading and trailing silence and cropped to a 3-second prompt (`--ref_sec`).
 
 ## Acknowledgements
 
