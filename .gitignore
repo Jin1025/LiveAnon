@@ -1,0 +1,18 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.ipynb_checkpoints/
+.vscode/
+.idea/
+.DS_Store
+
+checkpoints/
+output/
+*.wav
+*.flac
+*.mp3
+
+# demo page (GitHub Pages) keeps its audio samples
+!docs/**

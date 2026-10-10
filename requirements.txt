@@ -1,0 +1,8 @@
+# PyTorch is not listed: install the CUDA build for your system first, e.g.
+#   pip install torch==2.6.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cu124
+numpy<2
+soundfile>=0.12
+omegaconf>=2.3
+einops>=0.7
+huggingface_hub>=0.23
+jhcodec @ git+https://github.com/jhcodec843/jhcodec.git
