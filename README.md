@@ -1,4 +1,4 @@
-# LiveAnon: Streamable Speaker Anonymization
+# LiveAnon: Improving Privacy and Utility in Streaming Speaker Anonymization with Codec Language Models
 
 <p align="center">
   <a href="#"><img src="https://img.shields.io/badge/arXiv-coming%20soon-b31b1b.svg?style=plastic" alt="Paper" height="32"></a>
