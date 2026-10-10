@@ -23,7 +23,7 @@ Linguistic content is extracted by a streaming Zipformer ASR encoder and conditi
 A capped delay pattern generates the RVQ codebooks partially in parallel, which shortens the streaming latency.
 
 <p align="center">
-  <img src="assets/architecture.jpg" alt="LiveAnon architecture" width="100%">
+  <img src="docs/assets/liveanon_architecture.jpg" alt="LiveAnon architecture" width="100%">
 </p>
 
 ## Installation
