@@ -16,3 +16,6 @@ output/
 
 # demo page (GitHub Pages) keeps its audio samples
 !docs/**
+
+# exported ONNX models and TensorRT engines (onnx_inference/export_onnx.py)
+onnx_inference/exported/

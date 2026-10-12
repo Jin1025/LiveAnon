@@ -1,0 +1,17 @@
+# ONNX Runtime / TensorRT inference (inference.py) -- no PyTorch needed at runtime.
+# Exporting (export_onnx.py, make_prompt.py) additionally needs the main requirements.txt
+# (PyTorch) and `onnx`.
+numpy<2
+soundfile>=0.12
+scipy>=1.10
+kaldi-native-fbank>=1.20
+onnxruntime-gpu==1.22.0
+# CUDA 12 / cuDNN 9 libraries for onnxruntime-gpu (already present if PyTorch cu12 is installed)
+nvidia-cublas-cu12
+nvidia-cuda-runtime-cu12
+nvidia-cuda-nvrtc-cu12
+nvidia-cufft-cu12
+nvidia-curand-cu12
+nvidia-cudnn-cu12>=9,<10
+# optional: --provider tensorrt (must match the TensorRT version onnxruntime-gpu was built with)
+tensorrt-cu12==10.9.0.34

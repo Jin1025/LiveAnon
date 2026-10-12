@@ -76,6 +76,11 @@ python inference.py \
 In streaming mode, the source is processed chunk by chunk (`--chunk_ms`), and the anonymized audio is output progressively.
 The reference is trimmed of leading and trailing silence and cropped to a 3-second prompt (`--ref_sec`).
 
+## Optional: ONNX / TensorRT
+
+The `onnx_inference/` folder exports the streaming pipeline to ONNX and runs it with ONNX Runtime or TensorRT, without PyTorch.
+See [onnx_inference/README.md](onnx_inference/README.md).
+
 ## Acknowledgements
 
 - [JHCodec](https://github.com/jhcodec843/jhcodec): streaming neural audio codec
