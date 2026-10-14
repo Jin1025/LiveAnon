@@ -1,7 +1,7 @@
 # LiveAnon: Improving Privacy and Utility in Streaming Speaker Anonymization with Codec Language Models
 
 <p align="center">
-  <a href="#"><img src="https://img.shields.io/badge/arXiv-coming%20soon-b31b1b.svg?style=plastic" alt="Paper" height="32"></a>
+  <a href="https://arxiv.org/abs/2610.15379"><img src="https://img.shields.io/badge/arXiv-2610.15379-b31b1b.svg?style=plastic" alt="Paper" height="32"></a>
   <a href="https://jin1025.github.io/LiveAnon/"><img src="https://img.shields.io/badge/Demo-GitHub%20Pages-blue?style=plastic" alt="Demo" height="32"></a>
 </p>
 
